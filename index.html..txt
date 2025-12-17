@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salone Integrity Partners | Trust & Oversight in Sierra Leone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --sl-green: #007A33;
+            --sl-blue: #000080;
+            --sl-gold: #FFDA00;
+            --dark: #1a1a1a;
+            --light: #f9f9f9;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        
+        /* Mobile Friendly Navigation */
+        nav { background: white; padding: 1rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: 700; color: var(--sl-green); font-size: 1.2rem; text-transform: uppercase; letter-spacing: 1px; }
+        .nav-links { display: none; } /* Hidden on mobile by default, usually handled with a burger menu. For this clean version, we use smooth scroll anchors. */
+
+        /* Hero Section */
+        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=1000') center/cover; color: white; padding: 4rem 1.5rem; text-align: center; }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.1rem; margin-bottom: 2rem; max-width: 600px; margin-inline: auto; }
+
+        /* CTA Buttons */
+        .btn { display: inline-block; padding: 0.8rem 1.5rem; border-radius: 5px; text-decoration: none; font-weight: 600; transition: 0.3s; margin: 5px; }
+        .btn-primary { background: var(--sl-gold); color: black; }
+        .btn-secondary { background: white; color: var(--sl-green); }
+
+        /* Sections */
+        section { padding: 3rem 1.5rem; max-width: 1100px; margin: auto; }
+        h2 { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--sl-blue); margin-bottom: 1.5rem; text-align: center; }
+        
+        /* Services Grid */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+        .card { background: white; padding: 2rem; border-radius: 12px; border-bottom: 4px solid var(--sl-green); box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .card h3 { color: var(--sl-green); margin-bottom: 1rem; }
+
+        /* About & Approach */
+        .about-box { background: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem; }
+        .integrity-badge { background: #e6f4ea; color: #007A33; padding: 0.5rem 1rem; border-radius: 20px; font-weight: bold; font-size: 0.9rem; }
+
+        /* Success Stories */
+        .case-study { background: #fff; padding: 1.5rem; border-left: 5px solid var(--sl-blue); margin-bottom: 1rem; }
+        .problem { font-weight: bold; color: #d9534f; }
+        .solution { font-weight: bold; color: var(--sl-green); }
+
+        /* Contact & Socials */
+        .contact-info { text-align: center; background: var(--sl-blue); color: white; padding: 3rem 1.5rem; border-radius: 15px; }
+        .social-links a { color: var(--sl-gold); text-decoration: none; margin: 0 10px; font-weight: bold; }
+
+        footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #666; }
+
+        /* Mobile specific adjustments */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.8rem; }
+            section { padding: 2rem 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Salone Integrity</div>
+    <a href="https://wa.me/23200000000" class="btn btn-primary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">WhatsApp Us</a>
+</nav>
+
+<header class="hero">
+    <h1>Bridging the Gap with Integrity</h1>
+    <p>Professional oversight, NGO liaison, and bureaucratic support in Sierra Leone—managed by trusted local leadership.</p>
+    <div class="cta-group">
+        <a href="#contact" class="btn btn-primary">Get Started</a>
+        <a href="#services" class="btn btn-secondary">Our Services</a>
+    </div>
+</header>
+
+<section id="about">
+    <h2>About Us</h2>
+    <div class="about-box">
+        <span class="integrity-badge">Founded on Ethics</span>
+        <p style="margin-top:1rem;">Founded by a dedicated team of **Clergy, Educators, and Students**, Salone Integrity Partners (SIP) was created to solve the "Trust Gap" for foreigners and the diaspora. We combine local cultural fluency with professional reporting to ensure your projects succeed without compromise.</p>
+        <p style="margin-top:1rem;"><strong>Vision:</strong> To be the premier partner for transparent project execution in West Africa.</p>
+    </div>
+</section>
+
+<section id="services" style="background: #f0f2f5;">
+    <h2>Our Services</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Project Oversight</h3>
+            <p>We act as your independent eyes. From construction monitoring to budget adherence and quality control, we provide detailed photo/video reports.</p>
+        </div>
+        <div class="card">
+            <h3>NGO Liaison</h3>
+            <p>Acting as a bridge between international NGOs and local communities. We handle stakeholder engagement and cultural mediation.</p>
+        </div>
+        <div class="card">
+            <h3>Logistics Support</h3>
+            <p>Managing the "Last Mile." We handle transportation, supply chain, and the safe distribution of high-value goods across the country.</p>
+        </div>
+        <div class="card">
+            <h3>Bureaucratic Support</h3>
+            <p>Navigating local regulations. We assist with business registration, TIN procurement, and government interfaces.</p>
+        </div>
+    </div>
+</section>
+
+<section id="impact">
+    <h2>Success Stories</h2>
+    <div class="case-study">
+        <h4>Diaspora Home Build - York Village</h4>
+        <p class="problem">Problem: Client in London was being overcharged for cement and progress was stalled.</p>
+        <p class="solution">Solution: SIP took over oversight, audited receipts, and ensured a 20% cost reduction in materials.</p>
+    </div>
+    <div class="case-study">
+        <h4>Education NGO Site Visit</h4>
+        <p class="problem">Problem: A US-based charity needed to verify if a rural school was actually receiving supplies.</p>
+        <p class="solution">Solution: Our team conducted a surprise audit and community interview, providing verified impact data.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="contact-info">
+        <h2>Contact Us</h2>
+        <p>Ready to start your project with confidence?</p>
+        <p style="margin: 1.5rem 0;">Freetown, Sierra Leone<br>Email: info@saloneintegrity.com<br>Phone: +232 (Your Number Here)</p>
+        
+        <div class="social-links">
+            <a href="#">LinkedIn Profile</a> | <a href="https://wa.me/23200000000">WhatsApp Support</a>
+        </div>
+        
+        <a href="mailto:info@saloneintegrity.com" class="btn btn-primary" style="margin-top:2rem;">Send Email Inquiry</a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Salone Integrity Partners. All rights reserved.<br>Built for Sierra Leone's Future.</p>
+</footer>
+
+</body>
+</html>
